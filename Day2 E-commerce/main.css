@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+main{
+    margin: 0 auto;
+
+}
+.hero{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+
+}
+.hero h1{
+    font-size: 40px;
+    font-weight: 500;
+    color: #003F62;
+}
+.hero p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #003F62;
+}
+
+.hero_img{
+    width: 50%;
+}
+.hero img{
+    width: 80% ;
+    height: 400px;
+    object-fit: cover;
+}
+.hero button{
+    padding: 10px 20px;
+    background-color: #e2e61e;
+    color: #2124d8;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 150px;
+    cursor: pointer;
+}
+.hero_text{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+/* /* Products */
+
+.types{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    margin: 5rem 0;
+}
+.types h2{
+    font-size: 40px;
+    font-weight: 500;
+    color: #003F62;
+}
+
+.types button{
+    padding: 8px 10px;
+    background-color: transparent;
+    color: #2124d8;
+    border: 1px solid #2124d8 ;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 120px;
+    cursor: pointer;
+    text-align: center;
+}
+.types button:hover{
+    background-color: #2124d8;
+    color: #fff;
+}
+
+.products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 50px;
+    gap: 20px;
+}
+
+.product{
+    width: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.product img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.product:hover{
+    transform: scale(1.05);
+}
+
+.heart{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    background-color: #B3D4E5;
+    border-radius: 50%;
+    padding: 2px;
+    cursor: pointer;
+}
+.heart:hover{
+    background-color: #003F62;
+    cursor: pointer;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating img{
+    width: 80px;
+    height: 20px;
+    object-fit: cover;
+}
+.rating .btn_cart{
+    padding: 10px 20px;
+    background-color: #e2e61e;
+    color: #0004ff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.img{
+    width: 100%;
+    height: 350px;
+    margin: 4rem 0;
+    border-radius: 20px;
+    background-image: url(images/img.jpeg); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    
+}
+.img div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.img h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #2E8FC5;
+}
+.img button{
+    padding: 10px 20px;
+    background-color: #e2e61e;
+    color: #0004ff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    width: fit-content;
+    cursor: pointer;
+}
+.img p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+/* /* Footer */
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: #003F62;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0 50px;
+}
+.footer_logo{
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer_logo img{
+    width: 50px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.footer_logo h1{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.footer_icons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.footer_icons h3{
+    color: #d2f50a;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.footer_icons ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.footer_icons ul li{
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+

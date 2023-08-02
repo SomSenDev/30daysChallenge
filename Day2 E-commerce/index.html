@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Web</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <img src="images/shopping.png" alt="logo">
+                <h1>SHOPPING</h1>
+            </div>
+            <div class="menu">
+                <div class="cart">
+                    <img src="images/cart.png" alt="cart.png">
+                    <div class="cart_num">0</div>
+                </div>
+                <div class="love">
+                    <img src="images/heart.png" alt="heart.png">
+                    <div class="love_num">0</div>
+                </div>
+                <div class="user">
+                    <img src="images/signin.png" alt="user.png">
+                </div>
+        </header>
+
+        <!-- Main -->
+
+        <main>
+            <div class="hero">
+                <div class="hero_text">
+                    <h1>SHOPPING</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ea eaque possimus provident rem a
+                        similique asperiores tempore aliquam nam blanditiis earum voluptatum obcaecati, laudantium
+                        officia ad quod libero commodi est eos corporis in neque quam? Rem earum ullam quidem aliquid
+                        quaerat magni odit. Numquam, odit! Quaerat rem eos voluptate!</p>
+                    <button>Shop Now</button>
+                </div>
+                <div class="hero_img">
+                    <img src="images/DSLR-camera-PNG.png" alt="hero.png">
+                </div>
+            </div>
+            <div class="types">
+                <h2>popular products</h2>
+                <div class="product_types">
+                    <button>Camera</button>
+                    <button>Mobile</button>
+                    <button>Watch</button>
+                    <button>Headphone</button>
+                    <button>Tablet</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="product">
+                    <img src="images/DSLR-camera-PNG.png" alt="product.png">
+                    <div class="product_info">
+                        <h3>DSLR Camera</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        <div class="price">$100</div>
+                        <object class="heart" data="images/heart.svg" type="image/svg+xml"></object>
+                        <div class="rating">
+                            <img src="images/rating.png" alt="">
+                            <button onclick="add_to_cart()" class="btn_cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/gamepad.png" alt="product.png">
+                    <div class="product_info">
+                        <h3>Gamepad</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        <div class="price">$12</div>
+                        <object class="heart" data="images/heart.svg" type="image/svg+xml"></object>
+                        <div class="rating">
+                            <img src="images/rating.png" alt="">
+                            <button onclick="add_to_cart()" class="btn_cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/headphones.png" alt="product.png">
+                    <div class="product_info">
+                        <h3>Headphones</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        <div class="price">$22</div>
+                        <object class="heart" data="images/heart.svg" type="image/svg+xml"></object>
+                        <div class="rating">
+                            <img src="images/rating.png" alt="">
+                            <button onclick="add_to_cart()" class="btn_cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/laptop.png" alt="product.png">
+                    <div class="product_info">
+                        <h3>Laptop</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        <div class="price">$100</div>
+                        <object class="heart" data="images/heart.svg" type="image/svg+xml"></object>
+                        <div class="rating">
+                            <img src="images/rating.png" alt="">
+                            <button onclick="add_to_cart()" class="btn_cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/headphones.png" alt="product.png">
+                    <div class="product_info">
+                        <h3>Headphones</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        <div class="price">$22</div>
+                        <object class="heart" data="images/heart.svg" type="image/svg+xml"></object>
+                        <div class="rating">
+                            <img src="images/rating.png" alt="">
+                            <button onclick="add_to_cart()" class="btn_cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/gamepad.png" alt="product.png">
+                    <div class="product_info">
+                        <h3>Gamepad</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        <div class="price">$12</div>
+                        <object class="heart" data="images/heart.svg" type="image/svg+xml"></object>
+                        <div class="rating">
+                            <img src="images/rating.png" alt="">
+                            <button onclick="add_to_cart()" class="btn_cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/laptop.png" alt="product.png">
+                    <div class="Laptop">
+                        <h3>DSLR Camera</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        <div class="price">$100</div>
+                        <object class="heart" data="images/heart.svg" type="image/svg+xml"></object>
+                        <div class="rating">
+                            <img src="images/rating.png" alt="">
+                            <button onclick="add_to_cart()" class="btn_cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/DSLR-camera-PNG.png" alt="product.png">
+                    <div class="product_info">
+                        <h3>DSLR Camera</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        <div class="price">$100</div>
+                        <object class="heart" data="images/heart.svg" type="image/svg+xml"></object>
+                        <div class="rating">
+                            <img src="images/rating.png" alt="">
+                            <button onclick="add_to_cart()" class="btn_cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- img -->
+
+                <div class="img">
+                    <div>
+                        <h1>Sale up to 50% off</h1>
+                        <p>12inch display pc</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+
+        </main>
+
+        <!-- Footer -->
+
+        <Footer>
+            <div class="footer_logo">
+                <img src="images/shopping.png" alt="logo">
+                <h1>SHOPPING</h1>
+            </div>
+
+            <div class="footer_icons">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                    <li>Linkedin</li>
+                </ul>
+            </div>
+
+        </Footer>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
