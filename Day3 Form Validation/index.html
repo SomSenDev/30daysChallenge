@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="" onsubmit="return formValidate()">
+        <h2>Form Validation</h2>
+        <div class="form-control">
+            <label for="fullname">FullName</label>
+            <input type="text" id="fullname" placeholder="Enter your FullName">
+            <span class="fullnameError" id="error"></span>
+        </div>
+        <!-- username -->
+        <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your Username">
+            <span class="usernameError" id="error"></span>
+        </div>
+        <!-- email -->
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your Email">
+            <span class="emailError" id="error"></span>
+        </div>
+        <!-- phone -->
+        <div class="form-control">
+            <label for="Number" valu>Phone Number</label>
+            <input type="phone" id="phone" placeholder="Enter your Phone Number">
+            <span class="phoneError" id="error"></span>
+        </div>
+        <!-- password -->
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your Password">
+            <span class="passwordError" id="error"></span>
+        </div>
+        <!-- confirm password -->
+        <div class="form-control">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Enter your Confirm Password">
+            <span class="confirmPasswordError" id="error"></span>
+        </div>
+        <!-- gender -->
+        <div class="form-control">
+            <label for="text">Gender</label>
+            <div class="form-inline">
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+            </div>
+            <span class="genderError" id="error"></span>
+        </div>
+        <!-- sumbit -->
+        <div class="form-control">
+            <input type="submit" value="Submit">
+        </div>
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
