@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cart">
+            <div class="left">
+                <div class="header">
+                    <h1>Shopping Cart</h1>
+                    <h1>Items</h1>
+                </div>
+                <div class="line"></div>
+                <div class="products">
+                    <div class="prod_header">
+                        <h2>Product Detail</h2>
+                        <h2>Quantity</h2>
+                        <h2>Price</h2>
+                        <h2>Total</h2>
+                    </div>
+                    <div class="prod_items">
+                        <div class="prod_desc">
+                            <img src="images/gamepad.png" alt="">
+                            <h2>Gamepad</h2>
+                        </div>
+                        <input onchange="cart(0)"  class="quantity_num" type="number" value="1" min="0" >
+                        <p class="quantity">$20</p>
+                        <p class="item_total">$20</p>
+                    </div>
+                <!-- product2 -->
+                <div class="prod_items">
+                    <div class="prod_desc">
+                        <img src="images/DSLR-camera-PNG.png" alt="">
+                        <h2>Camera</h2>
+                    </div>
+                    <input onchange="cart(1)"  class="quantity_num" type="number" value="1" min="0" >
+                    <p class="quantity">$300</p>
+                    <p class="item_total">$300</p>
+                </div>
+                <!-- product3 -->
+                <div class="prod_items">
+                    <div class="prod_desc">
+                        <img src="images/headphones.png" alt="">
+                        <h2>Headphones</h2>
+                    </div>
+                    <input onchange="cart(2)" class="quantity_num" type="number" value="1" min="0" >
+                    <p class="quantity">$30</p>
+                    <p class="item_total">$30</p>
+                </div>
+                <!-- product4 -->
+                <div class="prod_items">
+                    <div class="prod_desc">
+                        <img src="images/laptop.png" alt="">
+                        <h2>laptop</h2>
+                    </div>
+                    <input onchange="cart(3)" class="quantity_num" type="number" value="1" min="0" >
+                    <p class="quantity">$250</p>
+                    <p class="item_total">$250</p>
+                </div>
+            </div>
+        </div>
+
+            <div class="right">
+                <h1>Summary Order</h1>
+                <div class="line"></div>
+              <div class="right_desc">
+                <div class="items">
+                    <h2>Items</h2>
+                    <h2 class="total">$0</h2>
+                </div>
+                <div class="shipping">
+                    <h2>Shipping</h2>
+                    <select>
+                        <option value="0">Free Shipping</option>
+                        <option value="5">Express Shipping - $5</option>
+                    </select>
+                </div>
+                <div class="promo_code">
+                    <h2>Promo Code</h2>
+                    <input type="text" placeholder="Enter your code">
+                </div>
+                <button class="btn">Apply</button>
+                <div class="line"></div>
+                <div class="total">
+                    <h2>Total</h2>
+                    <h2 class="total_cost">$0</h2>
+              </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
