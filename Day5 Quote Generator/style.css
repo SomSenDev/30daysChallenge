@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #b2f2fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 800px;
+    height: fit-content;
+    margin: 5rem auto;
+    overflow: auto;
+    padding: 0 20px;
+    background-color: #d59cfc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+}
+.container h1{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.quote{
+    width: 100%;
+}
+.quote .text{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fdfcf0;
+    padding: 20px;
+    text-align: center;
+}
+.quote .author{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+
+}
+.share{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.share button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    
+    background-color: #57e4d8;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.share button:hover{
+    background-color: #01fce7;
+}
+
+.share img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.share img:hover{
+    transform: scale(1.2);
+}
