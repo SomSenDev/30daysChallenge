@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    padding: 2rem ;
+}
+
+.container{
+    min-width: 600px;
+    max-width: 800px;
+    height: fit-content;
+    margin:5rem auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); ;
+    
+}
+
+/* if container is min-width  */
+@media screen and (max-width: 600px){
+   
+    .container{
+        min-width: 100%;
+    }
+}
+
+
+
+.container h1{
+    text-align: center;
+    padding: 2rem;
+    background-color: #feffaf;
+    border-bottom: 1px solid #ccc;
+}
+
+.container .input{
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input button{
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #4455f5;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 0.8rem;    
+}
+
+.input button:hover{
+    background-color: #2f3f2f;
+    scale: 1.1;
+}
+
+ul{
+    list-style: none;
+    padding: 1rem;
+}
+ul li{
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul li span{
+    font-size: 1.5rem;
+    color: #4455f5;
+}
+
+ul li button:nth-child(2){
+    background-color: rgb(46, 211, 74);
+    margin-left: auto;
+    margin-right: 0.5rem;
+
+}
+
+ul li button:nth-child(2):hover{
+    background-color: rgb(30, 216, 61);
+    scale: 1.1;
+}
+
+ul li button{
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #f55;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+ul li button:hover{
+    background-color: #f00;
+    scale: 1.1;
+}
+
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
