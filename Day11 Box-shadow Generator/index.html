@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadow Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <h1>Box-shadow Options</h1>
+            <!-- Horizantal -->
+            <div class="control_group">
+                <div class="control">
+                    <label for=""> Horizontal Shadow Length </label>
+                    <h3 class="horNum">10px</h3>
+                </div>
+                <input type="range" name="Horizantal" class="Horizantal" min="-200" max="200">
+            </div>
+            <!-- Vertical -->
+            <div class="control_group">
+                <div class="control">
+                    <label for=""> Vertical Shadow Length </label>
+                    <h3 class="verNum">10px</h3>
+                </div>
+                <input type="range" name="Vertical" class="Vertical" min="-200" max="200">
+            </div>
+            <!-- Blur -->
+            <div class="control_group">
+                <div class="control">
+                    <label for=""> Blur Shadow Length </label>
+                    <h3 class="blurNum">10px</h3>
+                </div>
+                <input type="range" name="Blur" class="Blur"
+                min="-200" max="200">    
+                </div>
+            <!-- Spread -->
+            <div class="control_group">
+                <div class="control">
+                    <label for=""> Spread Shadow Length </label>
+                    <h3 class="spreadNum">10px</h3>
+                </div>
+                <input type="range" name="Spread" class="Spread"
+                min="-200" max="200">
+            </div>
+            <!-- Color -->
+            <div class="control_group">
+                <div class="control">
+                    <label for=""> Shadow Color </label>  
+                    <input type="color" name="Color" class="color">
+                </div>  
+            </div>
+            <!-- Inset -->
+            <div class="control_group">
+                <div class="control">
+                    <label for=""> Inset Shadow </label>  
+                    <input type="checkbox" name="Inset" class="inset">
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div id="box" class="box__shadow">
+            </div>
+
+            <button class="copy">copy</button>
+        </div>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
