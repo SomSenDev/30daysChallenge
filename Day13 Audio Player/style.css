@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #aaaff7;
+}
+
+.container{
+    max-width: 1200px;
+    width: 60%;
+    margin: 2rem auto;
+    background-color: blueviolet;
+    border-radius: 10px 10px 5px 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+}
+
+/* responsive */
+@media(max-width: 700px){
+    body{
+        padding: 1rem;
+    }
+    
+    .container{
+        width: 100%;
+    }
+}
+
+    
+
+
+
+.player{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    background-image: url(images/wallpaper.jpg) ;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+}
+.player h3{
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;    
+}
+.progress{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+input[type=range]{
+    -webkit-appearance: none;
+    width: 80%;
+    height: 15px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    margin: 0 1rem;
+}
+input[type=range]::-moz-range-thumb{
+    width: 8px;
+    height:25px;
+    cursor: pointer;
+    background: blueviolet;
+    border: none;
+    
+}
+
+span{
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 1rem;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 3rem ;
+}
+
+.buttons img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 1rem;
+
+}
+
+.buttons img:hover{
+    transform: scale(1.1);
+
+}
+
+.buttons img:active{
+    transform: scale(0.9);
+}
