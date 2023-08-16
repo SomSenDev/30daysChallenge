@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+}
+
+header nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #8abcd8;
+
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li{
+    margin: 0 1rem;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0.5rem 0.25rem;
+    transition: all 0.3s ease-in-out;
+}
+header nav ul li a:hover{
+    color: #a0fa6c;
+    border-bottom: 2px solid #77f130;
+}
+
+header nav button{
+    padding: 0.5rem 1.5rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+header nav button:hover{
+    background-color: #8bf02d;
+    color: #fff;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(
+        https://placehold.co/1920x1080);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero h1{
+    font-size: 4rem;
+    font-weight: 400;
+    color: #78fc20;
+    margin-bottom: 1rem;
+}
+.hero p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #f78049;
+    margin-bottom: 1rem;
+}
+.hero button{
+    padding: 0.5rem 1.5rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.hero button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+main{
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+main .categories{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .categories .cat_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+main .categories .cat_head h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #000;
+}
+main .categories .cat_head a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0.5rem 0.25rem;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.cat_head a:hover{
+    color: #000;
+    border-bottom: 2px solid #000;
+
+}
+
+.categories .cards {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none; /* Hide scrollbar for Chrome, Safari, and newer Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for older versions of Firefox */
+    white-space: nowrap; /* Prevent cards from wrapping to new lines */
+    margin-bottom: 1rem;
+    gap: 1rem 2rem;
+    padding: 2rem 0; 
+}
+
+.categories .cards::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and newer Firefox */
+}
+
+.categories .cards .card{
+    flex: 0 0 auto ;
+    width: 270px;
+    height:fit-content;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.categories .cards .card:hover{
+    transform: scale(1.05);
+}
+
+.categories .cards .card img{
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+.card h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 0.2rem;
+    padding: 5px;
+}
+.card p{
+    font-size: 1rem;
+    font-weight: 400;
+    width: 90%;
+    color: #000;
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.card .rating{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+    padding: 5px;
+
+}
+
+footer{
+    background-color: #000;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+footer ul li{
+    margin: 0 1rem;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0.5rem 0.25rem;
+    transition: all 0.3s ease-in-out;
+}
+
+footer ul li a:hover{
+    color: #78fc20;
+    border-bottom: 2px solid #78fc20;
+}
+footer h1{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+footer p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 1rem;
+}
