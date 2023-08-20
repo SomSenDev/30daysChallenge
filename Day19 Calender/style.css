@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto+Mono&display=swap');
+:root{
+    --primary-color: #2ecc71;
+    --secondary-color: #e8e8e8;
+    --third-color: #aaaaaa;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kanit', 'Roboto Mono', monospace;
+    background-color: #d8d7d7;
+}
+
+.container{
+    max-width: 1170px;
+    width: 90%;
+    height: 100vh;
+    margin: 2rem auto;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.left-side{
+    width: 35%;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 20px 0 0 20px;
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+
+
+
+.menu{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu:active{
+    transform: scale(0.7);
+}
+
+
+.left-side .date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.date h1{
+    font-size: 13rem;
+    color: #fff;
+    font-weight: 900;
+} 
+.date h3{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: -3rem;
+}
+
+.calender{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.returnToToday{
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    /* position: absolute; 
+    top: 20px;
+    left: 20rem; */
+    width: 100px;
+    margin-left: 4rem;
+    margin-top: -8rem;
+    margin-bottom: 2rem;
+
+
+
+}
+.returnToToday:active{
+    transform: scale(0.7);
+}
+
+
+
+.year{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0.1rem;
+    right:0.75rem;
+}
+
+.year h1{
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+svg{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+svg path{
+    fill: var(--secondary-color);
+}
+
+svg:hover{
+    transform: scale(1.2);
+}
+
+svg path:hover{
+    fill: var(--primary-color);
+}
+
+.months{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    padding-left: 20px;
+}
+.months .month{
+    width: 100%;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+
+
+}
+
+.months .month:hover{
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.current-month{
+    color: var(--primary-color) !important;
+    font-weight: 900;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table tr th{
+    font-size: 1rem;
+    color: var(--third-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+table tr td{
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.today{
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.today:hover{
+    transform: scale(1.2);
+}
+
+
+
+/* responsive */
+
+
+
+@media screen and (max-width: 768px){
+
+    .month{
+        font-size: 12px !important;
+
+
+    }
+    .month {
+        padding: 0 !important;
+    }
+    .menu ,.left-side{
+        display: none !important;
+    }
+    
+}
