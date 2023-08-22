@@ -1,0 +1,91 @@
+@font-face{
+    font-family:'Digital';
+    src:url(digital-7.regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #5472aa;
+    font-family: 'Digital';
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hour , .min , .sec,.pmam{
+    background-color: #fff;
+    font-size: 10rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #0c185f;
+    box-shadow: 0 0 18px #8d8a8a;
+    text-shadow: 0 0 20px #09113b49;
+    transition: all 0.3s ease-in-out;
+}
+
+.colons{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.colons span{
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 0.75rem;
+    box-shadow: 0 0 18px #8d8a8a;
+
+}
+/* responsive */
+@media screen and (max-width: 816px){
+    .clock{
+        gap: 1rem;
+    }
+
+    .hour , .min , .sec,.pmam{
+        font-size: 8rem;
+        padding: 0.8rem;
+    }
+
+    .colons span{
+        padding: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 576px){
+    .clock{
+        gap: 0.5rem;
+    }
+
+    .hour , .min , .sec,.pmam{
+        font-size: 3rem;
+        padding: 0.5rem;
+    }
+
+    .colons span{
+        padding: 0.5rem;
+    }
+
+}
+
+
+
+
+
