@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #fff;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav{
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+}
+
+nav a{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+    margin-left: 1rem;
+    text-decoration: none;
+
+    
+
+}
+.hero{
+    background-image: url(images/anna-hunko-ajE5goOGzZc-unsplash.jpg);
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .search{
+    width: 600px;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 35px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 500;
+    padding-left: 1rem;
+    border-radius: 5px;
+}
+
+.search img{
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out ;
+       
+}
+
+.search img:hover{
+    transform: scale(1.1);
+}
+
+.search img:active{
+    transform: scale(0.9);
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    gap: 6rem;
+}
+
+main section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+section h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+
+}
+
+section:last-child{
+    margin-bottom: 5rem;
+}
+
+.books{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow:auto;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-behavior: smooth ;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.book{
+    flex: 0 0 auto;
+    width: 200px;
+    height: 300px;
+}
+
+.book img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out ;
+}
+
+.book img:hover{
+    transform: scale(1.02);
+}
+
+
+.book img:active{
+    transform: scale(0.98);
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: #000;
+    color: #fff;
+}
+
+footer p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px){
+    .hero{
+        height: 50vh;
+    }
+
+    .hero .search{
+        width: 90%;
+        height: 7vh;
+    }
+
+    section{
+        gap: 1rem;
+    }
+
+
+}
