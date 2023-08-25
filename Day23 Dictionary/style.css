@@ -1,0 +1,151 @@
+/* poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a068f8;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 800px;
+  margin: 2rem auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #d2daff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.search-box input {
+  width: 80%;
+  padding: 0.85rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  font-family: "Poppins", sans-serif ;
+}
+
+.search-box input:focus {
+  border: 2px solid #9865eb;
+  outline: none;
+}
+.search-box .btnSearch {
+  width: 20%;
+  padding: 0.85rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #a068f8;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-box .btnSearch:hover {
+  background-color: #4c2a83;
+}
+
+.result {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.result .word {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #9865eb;
+}
+
+.word h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.word .noun {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #4c2a83;
+}
+
+.result h3 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #4c2a83;
+  margin-bottom: 10px;
+}
+
+.result p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.result #speak {
+  font-size: 2rem;
+  color: #4c2a83;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.result .fa-volume-up:hover {
+  color: #a068f8;
+}
+
+.meaning,
+.example,
+.synonyms,
+.antonyms {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.synonyms-antonyms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.meaning,
+.example {
+  border-bottom: 2px solid #9865eb;
+  padding-bottom: 10px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    
+  }
+ 
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input autocomplete="off" type="text" placeholder="Search for a word" id="search">
+            <button type="button" class="btnSearch">Search</button>
+        </div>
+        <div class="result">
+            <div class="word">
+                <h1 id="word">Word <span class="noun">/w//w</span></h1>
+                <button id="speak"><i class="fas fa-volume-up"></i></button>
+            </div>
+            <div class="meaning">
+                <h3>Meaning</h3>
+                <p id="meaning">Meaning</p>
+            </div>
+            <div class="example">
+                <h3>Example</h3>
+                <p id="example">Example</p>
+            </div>
+            <div class="synonyms-antonyms">
+                <div class="synonyms">
+                    <h3>Synonyms</h3>
+                    <p id="synonyms">Synonyms</p>
+                </div>
+                <div class="antonyms">
+                    <h3>Antonyms</h3>
+                    <p id="antonyms">Antonyms</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
