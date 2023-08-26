@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #eeecec;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-code{
+    width: 500px;
+    padding: 20px ;
+    background-color: #3397d4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.qr-code__text , .qr-code__button{
+    width: 100%;
+
+}
+
+.qr-code__text h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.qr-code__text p{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.qr-code__text input{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.qr-code__button button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    background-color: #fff;
+    color: #3397d4;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.qr-code__button button:hover{
+    background-color: #f0f0f0;
+}
+
+.qr-code__button button:active{
+    transform: scale(0.98); ;
+}
+
+.qr-code__image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0;
+    transition: all 0.3s ease-in-out;
+   
+
+}
+
+.qr-code__image img{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width: 768px){
+    .qr-code{
+        width: 90%;
+    }
+}
