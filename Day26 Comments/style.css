@@ -1,0 +1,145 @@
+:root {
+    --background: #ECF0F4;
+    --white: white;
+    --gray-light: #FAFBFC;
+    --gray-borders: #ECF1F4;
+    --gray-dark: #AEB7C2;
+    --primary: #4D78C9;
+}
+
+/* CSS reset */
+*, *:before, *:after {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    width: 60%;
+    padding: 20px;
+    margin: 0 auto;
+
+    background-color: var(--background);
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px){
+    body{
+        width: 100%;
+    }
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.discussion{
+    background-color: var(--white);
+    border-radius: 10px;
+    min-width: 280px;
+    width: 100%;
+}
+
+.discussion__header{
+    background-color: var(--gray-light);
+    border-bottom: var(--gray-borders);
+    display: flex;
+    gap: 8px;
+    border-radius: 8px 8px 0px 0px;
+    padding: 16px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.discussion__header textarea{
+    border: 2px solid var(--gray-borders);
+    padding: 8px;
+    border-radius: 4px ;
+    font-size: 16px;
+    width: 100%;
+    height: 58px;
+    resize: none;
+    outline: none;
+    transition: height 0.3s ease-in-out;
+
+}
+
+.discussion__header textarea:focus{
+    height: 90px;
+    outline: none;
+    border: 2px solid var(--primary);
+}
+
+.discussion__comment{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.discussion__comment:last-child{
+    border-bottom: none;
+}
+
+.discussion__comment:first-child{
+    border-top: none;
+}
+.comment:last-child{
+    border-radius: 0px 0px 8px 8px;
+}
+
+.comment{
+    display: flex;
+    padding: 16px;
+    gap: 8px;
+    border-bottom: 1px solid var(--gray-borders);
+    background-color: var(--white);
+    min-height: 95px;
+    width: 100%;
+    
+}
+
+.newcomment_toolbar{
+    justify-content: end;
+    display: flex;
+    gap: 8px;
+    padding: 4px;
+}
+
+.newcomment_toolbar button{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+.commentBtn{
+    background-color: var(--primary);
+    color: var(--white);
+    min-width: 80px;
+}
+
+.commentBtn:hover{
+    background-color: #3A5E9E;
+}
+.comment__text{
+    font-size: 14px;
+    margin-top: 8px; 
+}
+
+.comment__author{
+    display: flex;
+    gap: 28px;
+}
+
